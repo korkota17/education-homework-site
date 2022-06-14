@@ -1,0 +1,208 @@
+/* ---------------------------------header start------------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+.logo-part{
+    font-size: 20PX;
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+#myLinks{
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+#myLinks > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+.nav{   
+    padding: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#item-1{
+    color: white;
+    margin-left: 20px;
+}
+/* ---------------------------------header end------------------------------------------------- */
+/* ---------------------------------section-1 start----------------------------------------- */
+section{
+    background-image: url(../imgs/main-picture.jpg);
+    height: 700px;
+}
+h1:nth-last-of-type(1){
+    margin-top: 25%;
+    text-align: center;
+}
+.section-1{
+    background-color: rgba(0, 128, 0, 0.2);
+    width: 50%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    height: 700px;
+}
+.text{
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+#read-more{
+    margin-left: 5%;
+    padding: 5px;
+    width: 30px;
+    height: auto;
+    text-decoration: none;
+    color: white;
+}
+h2{
+    text-align: center;
+    margin-top: 5%;
+}
+/* ---------------------------------------section-1 end---------------------------------------- */
+/* ---------------------------------------section-2 start------------------------------- */
+#section-2{
+    display: flex;
+    margin-left: 25px;
+    justify-content: space-around;
+}
+#item{
+    display: flex;
+    flex-direction: column  ;
+    margin: 50px;
+    padding: 0px;
+    width: 15%;
+    height: auto;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+#item > img {
+    width: auto;
+    height: 150px;
+    margin-left: 20px;
+}
+h5{
+    margin-top: 20px;
+    text-align: center;
+}
+.buton{
+    display: block;
+    width: 500px;
+}
+#item > a{
+    width: 90px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+#item > img{
+    width: 225px;
+}
+/* ---------------------------------------section-2 end------------------------------- */
+/* ---------------------------------------carusel part start--------------------------------------- */
+h4{
+    text-align: center;
+    margin: 50px;
+}
+#carusel{
+    margin-bottom: 100px;
+}
+/* ---------------------------------------media start------------------------------------------ */
+/* ---------------------------------------footer start------------------------------------ */
+#footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 16px;
+}
+#subscribe > span{
+    width: auto;
+    color: white;
+    height: auto;
+    border: 1px solid black;
+    padding: 3px;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin: 0px;
+    background-color: black;
+}
+#subscribe{
+    margin-top: 10px;
+    text-align: center;
+}
+input{
+    width: 20%;
+}
+/* ---------------------------------------footer end------------------------------------ */
+@media (max-width: 768px){
+    .section-1{
+        position: absolute;
+        left: 0%;
+        width: 100%;
+    }
+    #carusel{
+        width: 100%;
+    }
+
+}
+@media (max-width: 1024px){
+    #section-2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #item{
+        width: 23%;
+    }
+    #item > img{
+        width: auto;
+        margin-left: 5px;
+       }
+       #carusel{
+        width: 100%;
+    }
+}
+@media(max-width: 480px){
+    #item{
+        width: 500px;
+    }
+    #carusel{
+        width: 100%;
+    }
+}
+@media(max-width: 810px){
+    #item{
+        width: 70%;
+    }
+    #carusel{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    #footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    input{
+        width: 70%;
+    }
+}
